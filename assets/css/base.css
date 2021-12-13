@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 1240px;
+  margin: 0 auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-decoration: none;
+  font-weight: 400;
+}
+i {
+  font-style: normal;
+}
+li {
+  text-decoration: none;
+}
+a {
+  text-decoration: none !important;
+}
+body,
+html {
+  background-color: #e2e2e2;
+}
