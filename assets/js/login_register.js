@@ -34,9 +34,10 @@ class register{
                         password1:password1,
                         password2:password2,
                     },
-                    success:function(res){
+                    success:(res) => {
                         if(res.status === 0){
                             localStorage.setItem("phone_Cookie",res.datas.phone)
+                            localStorage.setItem("userName",res.datas.username)
                             location.href = "./index.html"
                         }else if(res.status === 1){
                             alert(res.msg)
@@ -66,11 +67,11 @@ class register{
                         data:{
                             phone:str
                         },
-                        success:function(res){
+                        success:(res) => {
                             if(res.status === 0){
                                 $(this).parent().siblings(".warning").children("p").html("")
                             }else if(res.status === 1){
-                                $(this).parent().siblings(".warning").children("p").html(data.msg)
+                                $(this).parent().siblings(".warning").children("p").html(res.msg)
                             }
                         }
                     })

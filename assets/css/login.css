@@ -1,0 +1,91 @@
+body,
+html {
+  background-color: #fff;
+}
+header {
+  position: relative;
+  padding: 10px 20px 0px;
+  height: 140px;
+}
+header ::after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 0;
+  height: 10px;
+  width: 100%;
+  background: url(../images/headbg.jpg) repeat-x;
+}
+header .container {
+  width: 1000px;
+}
+header .container h1 {
+  margin-top: 30px;
+  float: left;
+}
+header .container h1 img {
+  width: 100%;
+}
+header .container div {
+  margin-top: 50px;
+  float: right;
+}
+header .container div h4 {
+  color: #999;
+  font-size: 18px;
+}
+header .container div h4 a {
+  color: #1493af;
+}
+.registerBody {
+  display: flex;
+  width: 900px;
+  justify-content: space-evenly;
+  position: relative;
+}
+.registerBody h2 {
+  display: block;
+  position: absolute;
+  top: 55px;
+  right: 82px;
+  font-size: 25px;
+  color: #1493af;
+  width: 120px;
+  height: 46px;
+  line-height: 43px;
+  text-align: center;
+  border: 2px solid #1493af;
+  border-radius: 20px;
+}
+.registerBody .logo img {
+  width: 80%;
+}
+.registerBody .loginForm {
+  margin-top: 160px;
+}
+.registerBody .loginForm .warning {
+  position: relative;
+  height: 12px;
+}
+.registerBody .loginForm .warning p {
+  position: absolute;
+  top: 4px;
+  left: 95px;
+  color: red;
+}
+.registerBody .loginForm .form-group:nth-child(3) {
+  margin-top: 40px;
+  width: 100%;
+}
+.registerBody .loginForm .form-group:nth-child(3) button {
+  width: 250px;
+  font-size: 24px;
+  color: #1493af;
+}
+.registerBody .loginForm .input-group .input-group-addon {
+  width: 90px;
+  background-color: #fff;
+  color: #1493af;
+  font-weight: 500;
+}
