@@ -1,0 +1,74 @@
+.bannerLB {
+    position: relative;
+    text-align: center;
+    left: 0;
+    top: 0;
+    width: 620px;
+    height: 300px;
+    background-color: pink;
+    overflow: hidden;
+}
+
+.bannerLB ul {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 600%;
+}
+
+.bannerLB ul li {
+    float: left;
+    width: 620px;
+    height: 300px;
+}
+
+.bannerLB ul li img {
+    width: 100%;
+}
+
+.bannerLB .arrow-l {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 22px;
+    height: 32px;
+    background: url(../images/arrow-prev.png) rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+.bannerLB .arrow-r {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 22px;
+    height: 32px;
+    background: url(../images/arrow-next.png) rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+.bannerLB .bannerBall {
+    position: absolute;
+    bottom: 40px;
+    left: 560px;
+}
+
+.bannerLB .bannerBall ol {
+    padding-left: 50px;
+}
+
+.bannerLB .bannerBall ol li {
+    float: left;
+    list-style: disc;
+    width: 20px;
+    height: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 40px;
+}
+
+.LB {
+    margin: 10px;
+}

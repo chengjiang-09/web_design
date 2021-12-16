@@ -1,0 +1,119 @@
+.funcModule {
+  height: 30px;
+  line-height: 30px;
+}
+.funcModule .container {
+  display: flex;
+  width: 1000px;
+  justify-content: space-between;
+}
+.funcModule .container .funcLeft {
+  width: 50%;
+}
+.funcModule .container .funcLeft a:first-child {
+  color: #888888;
+}
+.funcModule .container .funcLeft a:first-child:hover {
+  color: #1493af;
+}
+.funcModule .container .funcLeft a:last-child {
+  color: #1493af;
+}
+.funcModule .container .funcLeft a {
+  font-size: 12px;
+  float: left;
+  margin-right: 30px;
+}
+.funcModule .container .funcRigth {
+  width: 50%;
+}
+.funcModule .container .funcRigth ul {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.funcModule .container .funcRigth ul li {
+  color: #888888;
+}
+.funcModule .container .funcRigth ul li a {
+  color: #888888;
+}
+.funcModule .container .funcRigth ul li a:hover {
+  color: #1493af;
+}
+.funcModule .container .funcRigth ul li:nth-child(4) span {
+  color: #1493af;
+  margin: 0 2px;
+}
+.searchBook {
+  height: 140px;
+  background-color: #fff;
+  position: relative;
+}
+.searchBook .container .logo {
+  position: absolute;
+  left: 200px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.searchBook .container form {
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+}
+.searchBook .container form .input-group {
+  position: relative;
+}
+.searchBook .container form #inputsearch {
+  width: 400px;
+  height: 50px;
+  border: 5px solid #1493af;
+}
+.searchBook .container form .glyphicon-search {
+  position: absolute;
+  width: 80px;
+  height: 50px;
+  right: -75px;
+  top: 0px;
+  border: 0px;
+  background-color: #1493af;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav .navLeft {
+  background-color: #fff;
+  margin: 10px 0px;
+  width: 200px;
+  height: 515px;
+}
+nav .navLeft ul li {
+  cursor: pointer;
+  padding: 0 8px;
+}
+nav .navLeft ul li h4 {
+  margin-left: 10px;
+  position: relative;
+  font-size: 10px;
+}
+nav .navLeft ul li h4 i {
+  position: absolute;
+  right: 10px;
+  top: 0;
+}
+nav .navLeft ul li span {
+  font-size: 8px;
+}
+nav .navLeft ul li:hover {
+  color: #1493af;
+}
+nav .navMid {
+  flex: 1;
+}
+nav .navRight {
+  margin: 10px 0px;
+  width: 400px;
+  height: 515px;
+}

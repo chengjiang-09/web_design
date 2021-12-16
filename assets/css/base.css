@@ -19,7 +19,7 @@ i {
   font-style: normal;
 }
 li {
-  text-decoration: none;
+  list-style: none;
 }
 a {
   text-decoration: none !important;
