@@ -1,6 +1,15 @@
 .funcModule {
   height: 30px;
   line-height: 30px;
+  position: relative;
+}
+.funcModule .bainian {
+  position: absolute;
+  right: 10px;
+  top: 200px;
+}
+.funcModule .bainian img {
+  width: 150px;
 }
 .funcModule .container {
   display: flex;
@@ -112,8 +121,108 @@ nav .navLeft ul li:hover {
 nav .navMid {
   flex: 1;
 }
+nav .navMid .ad {
+  display: flex;
+}
+nav .navMid .ad div {
+  width: 200px;
+  height: 220px;
+  margin-left: 11px;
+  background-color: #fff;
+  border-radius: 5px;
+}
 nav .navRight {
   margin: 10px 0px;
   width: 400px;
   height: 515px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+nav .navRight div {
+  position: relative;
+  background-color: #fff;
+  width: 170px;
+  height: 170px;
+  margin: 0px 0px 10px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+nav .navRight div i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+}
+nav .navRight div:hover,
+nav .navRight div i:hover {
+  color: #1493af;
+  transition: all 0.2s;
+}
+.body .container {
+  margin-top: 12px;
+  border-radius: 8px;
+  display: flex;
+}
+.body .container .bookAside {
+  width: 200px;
+  background-color: #fff;
+  height: 500px;
+  border-radius: 5px;
+}
+.body .container .classifyBooks {
+  flex: 1;
+}
+.body .container .classifyBooks .up {
+  display: flex;
+  justify-content: space-between;
+}
+.body .container .classifyBooks .up .commonBook {
+  padding: 0 8px;
+  width: 50%;
+  background-color: #fff;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+.body .container .classifyBooks .up .commonBook .commonBookTitle {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 2px dashed #1493af;
+}
+.body .container .classifyBooks .up .commonBook .commonBookTitle h3 {
+  color: #1493af;
+}
+.body .container .classifyBooks .up .newBook {
+  padding: 0 8px;
+  width: 50%;
+  background-color: #fff;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+.body .container .classifyBooks .up .newBook .newBookTitle {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 2px dashed #1493af;
+}
+.body .container .classifyBooks .up .newBook .newBookTitle h3 {
+  color: #1493af;
+}
+.body .container .classifyBooks .un {
+  display: flex;
+}
+.body .container .classifyBooks .un .activeBook {
+  padding: 0 8px;
+  width: 100%;
+  background-color: #fff;
+  margin: 10px 0 10px 10px;
+  border-radius: 5px;
+}
+.body .container .classifyBooks .un .activeBook .activeBookTitle {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 2px dashed #1493af;
+}
+.body .container .classifyBooks .un .activeBook .activeBookTitle h3 {
+  color: #1493af;
 }
