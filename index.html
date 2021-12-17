@@ -120,34 +120,112 @@
     <div class="body">
       <div class=" container">
           <div class="bookAside">
+            <div class="bookAsideTitle">
+              <h4>图书精选</h4>
+            </div>
+            <!-- 精选图书 -->
             <ul>
-              <li></li>
-              <li></li>
+              
             </ul>
           </div>
           <div class="classifyBooks">
             <div class="up">
               <div class="commonBook">
                 <div class="commonBookTitle"><h3>书藏</h3></div>
+                <ul class="bookBox">
+                  <li>
+                    <div class="bookpic">
+                      <a href="javascript:;"><img src="./assets/uploads/90.jfif"></a>
+                    </div>
+                    <div class="text">
+                      <h3><a href="javascript:;">开局一个亚空间</a></h3>
+                      <p>诸位，希望并没有消失，我们的征途应当是星辰大海！</p>
+                      <div>
+                        <span><a href="javascript:;"><i class="glyphicon glyphicon-user"></i>最终永恒</a></span>
+                        <span><a href="javascript:;">[星际文明]</a></span><span class="glyphicon glyphicon-shopping-cart"><a href="javascript:;">加入购物车</a></span>
+                      </div>
+                    </div>
+                    <div class="bookPrice">￥ <span>50</span></div>
+                  </li>
+                  
+                </ul>
               </div>
               <div class="newBook">
                 <div class="newBookTitle"><h3>新书</h3></div>
+                <ul>
+                  <li>
+
+                  </li>
+                </ul>
               </div>
             </div>
             <div class="un">
               <div class="activeBook">
-                <div class="activeBookTitle"><h3>新书</h3></div>
+                <div class="activeBookTitle"><h3>畅销书</h3></div>
+                <ul class="bookBox">
+                  <li>
+                    <div class="bookpic">
+                      <a href="javascript:;"><img src="./assets/uploads/90.jfif"></a>
+                    </div>
+                    <div class="text">
+                      <h3><a href="javascript:;">开局一个亚空间</a></h3>
+                      <p>诸位，希望并没有消失，我们的征途应当是星辰大海！</p>
+                      <div>
+                        <span><a href="javascript:;"><i class="glyphicon glyphicon-user"></i>最终永恒</a></span>
+                        <span><a href="javascript:;">[星际文明]</a></span><span class="glyphicon glyphicon-shopping-cart"><a href="javascript:;">加入购物车</a></span>
+                      </div>
+                    </div>
+                    <div class="bookPrice">￥ <span>50</span></div>
+                  </li>
+                  <li>
+                    <div class="bookpic">
+                      <a href="javascript:;"><img src="./assets/uploads/90.jfif"></a>
+                    </div>
+                    <div class="text">
+                      <h3><a href="javascript:;">开局一个亚空间</a></h3>
+                      <p>诸位，希望并没有消失，我们的征途应当是星辰大海！</p>
+                      <div>
+                        <span><a href="javascript:;"><i class="glyphicon glyphicon-user"></i>最终永恒</a></span>
+                        <span><a href="javascript:;">[星际文明]</a></span><span class="glyphicon glyphicon-shopping-cart"><a href="javascript:;">加入购物车</a></span>
+                      </div>
+                    </div>
+                    <div class="bookPrice">￥ <span>50</span></div>
+                  </li>
+                  
+                  
+                </ul>
               </div>
             </div>
           </div>
       </div>
     </div>
 
+    <script type="text/html" id="bookAside">
+      <li><a href="{{ url }}"><span>[{{ bookclassify }}]</span><span>{{ bookname }}</span><span>{{ author }}</span></a></li>
+    </script>
+
+    <script type="text/html" id="oneBook">
+      <li>
+        <div class="bookpic">
+          <a href="javascript:;"><img src="{{ bookpic }}{{ picname }}"></a>
+        </div>
+        <div class="text">
+          <h3><a href="javascript:;">{{ bookname }}</a></h3>
+          <p>{{ content }}</p>
+          <div>
+            <span><a href="javascript:;"><i class="glyphicon glyphicon-user"></i>{{ author }}</a></span>
+            <span><a href="javascript:;">[{{ bookclassify }}]</a></span><span class="glyphicon glyphicon-shopping-cart"><a href="javascript:;">加入购物车</a></span>
+          </div>
+        </div>
+        <div class="bookPrice">￥ <span>{{ bookprice }}</span></div>
+      </li>
+    </script>
 
     
     <script src="./assets/libs/jquery.min.js"></script>
     <script src="./assets/js/index.js"></script>
     <script src="./assets/js/bannelLB.js"></script>
     <script src="./assets/utils/kartu.js"></script>
+    <script src="./assets/utils/util_template.js"></script>
 </body>
 </html>
