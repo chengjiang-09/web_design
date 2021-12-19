@@ -1,3 +1,6 @@
+@fontsize: 12px;
+@fontColor: #1493af;
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +11,12 @@
     margin: 0 auto;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     text-decoration: none;
     font-weight: 400;
 }
@@ -18,14 +26,182 @@ i {
 }
 
 li {
-    text-decoration: none;
+    list-style: none;
 }
 
 a {
     text-decoration: none !important;
-
+    color: rgb(68, 68, 68);
 }
 
-body, html {
+body,
+html {
     background-color: rgb(226, 226, 226);
+}
+
+// 网页头
+.funcModule {
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+
+    .bainian {
+        position: absolute;
+        right: 10px;
+        top: 200px;
+
+        img {
+            width: 150px;
+        }
+    }
+
+    .container {
+        display: flex;
+        width: 1000px;
+        justify-content: space-between;
+
+        .funcLeft {
+            width: 50%;
+
+            a:first-child {
+                color: rgb(136, 136, 136);
+            }
+
+            a:first-child:hover {
+                color: @fontColor;
+            }
+
+            a:last-child {
+                color: @fontColor;
+            }
+
+            a {
+                font-size: @fontsize;
+                float: left;
+                margin-right: 30px;
+            }
+        }
+
+        .funcRigth {
+            width: 50%;
+
+            ul {
+                font-size: @fontsize;
+                display: flex;
+                justify-content: space-evenly;
+
+                li {
+                    color: rgb(136, 136, 136);
+
+                    a {
+                        color: rgb(136, 136, 136);
+                    }
+
+                    a:hover {
+                        color: @fontColor;
+                    }
+                }
+
+                li:nth-child(4) {
+                    span {
+                        color: @fontColor;
+                        margin: 0 2px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.searchBook {
+    height: 140px;
+    background-color: #fff;
+    position: relative;
+
+    .container {
+
+        .logo {
+            position: absolute;
+            left: 200px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        form {
+            position: absolute;
+            left: 46%;
+            top: 35%;
+            transform: translate(-50%, -50%);
+
+            .input-group {
+                position: relative;
+            }
+
+            #inputsearch {
+                width: 400px;
+                height: 50px;
+                border: 5px solid @fontColor;
+            }
+
+            .glyphicon-search {
+                position: absolute;
+                width: 80px;
+                height: 50px;
+                right: -75px;
+                top: 0px;
+                border: 0px;
+                background-color: @fontColor;
+            }
+        }
+    }
+
+    .headernav {
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        a {
+            background-color: #fff !important;
+            color: #999 !important;
+            width: 140px !important;
+            text-align: center;
+        }
+
+        a:hover {
+            color: @fontColor !important;
+        }
+
+        li:hover {
+            background-color: @fontColor !important;
+        }
+
+        .active {
+            background-color: @fontColor !important;
+        }
+    }
+}
+@media screen and (max-width: 1400px) {
+    html,body {
+        width: 100%;
+    }
+
+    .bainian {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+
+    #searchForm {
+        display: none;
+    }
+
+    .navRight{
+        width: 100%;
+    }
+
+    .headernav{
+        display: none;
+    }
 }

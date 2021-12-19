@@ -16,18 +16,19 @@
             <div class="bainian"><img src="./assets/images/bainian2.png"></div>
             <div class="container">
                 <div class="funcLeft">
-                    <a href="./register_login.html">欢迎光临，去登录</a>
+                    <a href="./register_login.html">欢迎光临，<span>去登录</span></a>
                     <a href="./login_register.html">免费注册</a>
                 </div>
                 <div class="funcRigth">
                     <ul>
-                        <li>|</li>
-                        <li><a href="javascript:;">书店首页</a></li>
+                        <li></li>
+                        <li><a href="./index.html">书店首页</a></li>
                         <li>|</li>
                         <li><a href="javascript:;"><span class="glyphicon glyphicon-shopping-cart"></span>购物车<span>0</span></a></li>
                         <li>|</li>
                         <li><a href="javascript:;">我的订单</a></li>
                         <li>|</li>
+                        <li><a href="javascript:;">个人中心</a></li>
                     </ul>
                 </div>
             </div>
@@ -36,15 +37,21 @@
             <div class="container">
                 <div class="logo"><a href="./index.html"><img src="./assets/images/logo.png"></a></div>
 
-                <form class="form-inline">
+                <form class="form-inline" id="searchForm">
                     <div class="form-group">
                       <div class="input-group">
-                        <input type="text" class="form-control" id="inputsearch" placeholder="Amount">
+                        <input type="text" class="form-control" id="inputsearch" placeholder="">
                         <button class="glyphicon glyphicon-search"></button>
                       </div>
                     </div>
                   </form>
             </div>
+            <ul class="nav nav-pills headernav">
+              <li role="presentation" class="active"><a href="./index.html">主页</a></li>
+              <li role="presentation"><a href="./commonbooks.html">书库</a></li>
+              <li role="presentation"><a href="./activeBooks.html">畅销书籍</a></li>
+              <li role="presentation"><a href="./newBooks.html">新书</a></li>
+            </ul>
         </div>
     </header>
 
@@ -125,7 +132,6 @@
             </div>
             <!-- 精选图书 -->
             <ul>
-              
             </ul>
           </div>
           <div class="classifyBooks">
@@ -133,84 +139,47 @@
               <div class="commonBook">
                 <div class="commonBookTitle"><h3>书藏</h3></div>
                 <ul class="bookBox">
-                  <li>
-                    <div class="bookpic">
-                      <a href="javascript:;"><img src="./assets/uploads/90.jfif"></a>
-                    </div>
-                    <div class="text">
-                      <h3><a href="javascript:;">开局一个亚空间</a></h3>
-                      <p>诸位，希望并没有消失，我们的征途应当是星辰大海！</p>
-                      <div>
-                        <span><a href="javascript:;"><i class="glyphicon glyphicon-user"></i>最终永恒</a></span>
-                        <span><a href="javascript:;">[星际文明]</a></span><span class="glyphicon glyphicon-shopping-cart"><a href="javascript:;">加入购物车</a></span>
-                      </div>
-                    </div>
-                    <div class="bookPrice">￥ <span>50</span></div>
-                  </li>
+                  <!-- 书库 -->
                   
                 </ul>
+                <a href="javascript:;" class="morebook">更多书籍 ></a>
               </div>
               <div class="newBook">
                 <div class="newBookTitle"><h3>新书</h3></div>
-                <ul>
-                  <li>
+                <ul class="bookBox">
+                  <!-- 新书 -->
 
-                  </li>
                 </ul>
+                <a href="javascript:;" class="morebook">更多书籍 ></a>
               </div>
             </div>
             <div class="un">
               <div class="activeBook">
                 <div class="activeBookTitle"><h3>畅销书</h3></div>
                 <ul class="bookBox">
-                  <li>
-                    <div class="bookpic">
-                      <a href="javascript:;"><img src="./assets/uploads/90.jfif"></a>
-                    </div>
-                    <div class="text">
-                      <h3><a href="javascript:;">开局一个亚空间</a></h3>
-                      <p>诸位，希望并没有消失，我们的征途应当是星辰大海！</p>
-                      <div>
-                        <span><a href="javascript:;"><i class="glyphicon glyphicon-user"></i>最终永恒</a></span>
-                        <span><a href="javascript:;">[星际文明]</a></span><span class="glyphicon glyphicon-shopping-cart"><a href="javascript:;">加入购物车</a></span>
-                      </div>
-                    </div>
-                    <div class="bookPrice">￥ <span>50</span></div>
-                  </li>
-                  <li>
-                    <div class="bookpic">
-                      <a href="javascript:;"><img src="./assets/uploads/90.jfif"></a>
-                    </div>
-                    <div class="text">
-                      <h3><a href="javascript:;">开局一个亚空间</a></h3>
-                      <p>诸位，希望并没有消失，我们的征途应当是星辰大海！</p>
-                      <div>
-                        <span><a href="javascript:;"><i class="glyphicon glyphicon-user"></i>最终永恒</a></span>
-                        <span><a href="javascript:;">[星际文明]</a></span><span class="glyphicon glyphicon-shopping-cart"><a href="javascript:;">加入购物车</a></span>
-                      </div>
-                    </div>
-                    <div class="bookPrice">￥ <span>50</span></div>
-                  </li>
-                  
-                  
+                  <!-- 畅销书 -->
+            
                 </ul>
+                <a href="javascript:;" class="morebook">更多书籍 ></a>
               </div>
             </div>
           </div>
       </div>
     </div>
 
+    <!-- 精选书模板 -->
     <script type="text/html" id="bookAside">
-      <li><a href="{{ url }}"><span>[{{ bookclassify }}]</span><span>{{ bookname }}</span><span>{{ author }}</span></a></li>
+      <li><a href="http://127.0.0.1/books/{{ bookid }}" id="{{ bookid }}" title="{{ bookname }}"><span>[{{ bookclassify }}]</span><span>{{ bookname }}</span><span>{{ author }}</span></a></li>
     </script>
 
+    <!-- 单本书籍模板 -->
     <script type="text/html" id="oneBook">
       <li>
         <div class="bookpic">
-          <a href="javascript:;"><img src="{{ bookpic }}{{ picname }}"></a>
+          <a href="http://127.0.0.1/books/{{ bookid }}" id="{{ bookid }}"><img src="{{ bookpic }}/{{ picname }}"></a>
         </div>
         <div class="text">
-          <h3><a href="javascript:;">{{ bookname }}</a></h3>
+          <h3><a href="http://127.0.0.1/books/{{ bookid }}">{{ bookname }}</a></h3>
           <p>{{ content }}</p>
           <div>
             <span><a href="javascript:;"><i class="glyphicon glyphicon-user"></i>{{ author }}</a></span>
