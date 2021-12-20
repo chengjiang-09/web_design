@@ -28,7 +28,7 @@ class register{
 
                 $.ajax({
                     type:"POST",
-                    url:"http://127.0.0.1/web_bookstore/user_register",
+                    url:"http://46ee815878.qicp.vip/web_bookstore/user_register",
                     data:{
                         phone:phone,
                         password1:password1,
@@ -63,7 +63,7 @@ class register{
 
                     $.ajax({
                         type:"POST",
-                        url:"http://127.0.0.1/api/verification_phone",
+                        url:"http://46ee815878.qicp.vip/api/verification_phone",
                         data:{
                             phone:str
                         },

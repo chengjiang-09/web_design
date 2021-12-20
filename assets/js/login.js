@@ -25,7 +25,7 @@ class login{
 
                 $.ajax({
                     type:"POST",
-                    url:"http://127.0.0.1/web_bookstore/user_login",
+                    url:"http://46ee815878.qicp.vip/web_bookstore/user_login",
                     data:{
                         phone:phone,
                         password:password

@@ -7,7 +7,7 @@ class init_index{
     async init(){
         await $.ajax({
             type:"GET",
-            url:"http://127.0.0.1/web_bookstore/init_searchbook",
+            url:"http://46ee815878.qicp.vip/web_bookstore/init_searchbook",
             data:{},
             success:(res) => {
                 if(res.status == 0){
