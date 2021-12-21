@@ -5,27 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%=title %></title>
-    <link rel="stylesheet" href="http://46ee815878.qicp.vip/assets/libs/bootstrap-3.4.1-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="http://46ee815878.qicp.vip/assets/css/base.css">
-    <link rel="stylesheet" href="http://46ee815878.qicp.vip/assets/css/oneBook.css">
+    <title></title>
+    <link rel="stylesheet" href="../libs/bootstrap-3.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/oneBook.css">
 </head>
 
 <body>
     <header>
         <div class="funcModule">
-            <div class="bainian"><img src="http://46ee815878.qicp.vip/assets/images/bainian2.png"></div>
+            <div class="bainian"><img src="../images/bainian2.png"></div>
             <div class="container">
                 <div class="funcLeft">
-                    <a href="http://46ee815878.qicp.vip/register_login.html">欢迎光临，<span>去登录</span></a>
-                    <a href="http://46ee815878.qicp.vip/login_register.html">免费注册</a>
+                    <a href="../../register_login.html">欢迎光临，<span class="userNamePhone">去登录</span></a>
+                    <a href="../../login_register.html">免费注册</a>
                 </div>
                 <div class="funcRigth">
                     <ul>
                         <li></li>
-                        <li><a href="http://46ee815878.qicp.vip/index.html">书店首页</a></li>
+                        <li><a href="../../index.html">书店首页</a></li>
                         <li>|</li>
-                        <li><a href="javascript:;"><span
+                        <li><a href="../../orderCar.html"><span
                                     class="glyphicon glyphicon-shopping-cart"></span>购物车<span>0</span></a></li>
                         <li>|</li>
                         <li><a href="javascript:;">我的订单</a></li>
@@ -37,8 +37,8 @@
         </div>
         <div class="searchBook">
             <div class="container">
-                <div class="logo"><a href="http://46ee815878.qicp.vip/index.html"><img
-                            src="http://46ee815878.qicp.vip/assets/images/logo.png"></a></div>
+                <div class="logo"><a href="../../index.html"><img
+                            src="../images/logo.png"></a></div>
 
                 <form class="form-inline" id="searchForm">
                     <div class="form-group">
@@ -50,26 +50,35 @@
                 </form>
             </div>
             <ul class="nav nav-pills headernav">
-                <li role="presentation"><a href="http://46ee815878.qicp.vip/index.html">主页</a></li>
-                <li role="presentation"><a href="http://46ee815878.qicp.vip/commonbooks.html">书库</a></li>
-                <li role="presentation"><a href="http://46ee815878.qicp.vip/activeBooks.html">畅销书籍</a></li>
-                <li role="presentation"><a href="http://46ee815878.qicp.vip/newBooks.html">新书</a></li>
+                <li role="presentation"><a href="../../index.html">主页</a></li>
+                <li role="presentation"><a href="../../commonbooks.html">书库</a></li>
+                <li role="presentation"><a href="../../activeBooks.html">畅销书籍</a></li>
+                <li role="presentation"><a href="../../newBooks.html">新书</a></li>
             </ul>
         </div>
     </header>
 
+    <!-- 书籍主体 -->
     <div class="bookbody container">
+        
+    </div>
+
+    <footer>
+        
+    </footer>
+
+    <script type="text/html" id="booktl">
         <div class="bodyLeft">
             <div class="bookpic">
-                <img src=<%=picUrl %> >
+                <img src="../..{{ bookpic }}/{{ picname }}" >
             </div>
-            <h2>《<%=bookname %>》</h2>
+            <h2>《{{ bookname }}》</h2>
         </div>
         <div class="bodyRigth">
-            <div class="bookname"><%=bookname %></div>
-            <div class="content"><%=content %></div>
-            <div class="author"><a href="javacripts:;"><%=author %></a> [著]</div>
-            <div class="price"><span>书城价格</span><span>￥</span><span><%=bookprice %></span></div>
+            <div class="bookname">{{ bookname }}</div>
+            <div class="content">{{ content }}</div>
+            <div class="author"><a href="javacripts:;">{{ author }}</a> [著]</div>
+            <div class="price"><span>书城价格</span><span>￥</span><span>{{ bookprice }}</span></div>
             <div class="classify"><span>购买规格</span><span><a href="javascript:;" class="classifyname">1本</a></span></div>
             <div class="num"><span>数量</span>
                 <div class="upun">
@@ -78,17 +87,16 @@
                     <a href="javascript:;" class="glyphicon glyphicon-chevron-down"></a>
                 </div>
             </div>
-            <div><p><span>库存:</span><span><%=booknum %></span></p></div>
+            <div><p><span>库存:</span><span>{{ booknum }}</span></p></div>
             <div class="toOrderCar">
                 <button>加入购物车</button>
             </div>
         </div>
-    </div>
+    </script>
 
-    <footer>
-        
-    </footer>
-
+    <script src="../libs/jquery.min.js"></script>
+    <script src="../js/verification_session.js"></script>
+    <script src="../utils/util_template.js"></script>
+    <script src="../js/onebook.js"></script>
 </body>
-
 </html>

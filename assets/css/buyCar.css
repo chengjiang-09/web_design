@@ -1,0 +1,157 @@
+.body {
+  margin-top: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px 25px;
+  margin-bottom: 70px;
+}
+.body .buyAll {
+  height: 40px;
+  width: 100%;
+  line-height: 40px;
+  border-bottom: 2px solid #1493af;
+  color: #1493af;
+}
+.body .buyAll input {
+  margin-right: 5px;
+}
+.body .buyList .text {
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+}
+.body .buyList .text :nth-child(1) {
+  margin-left: 100px;
+}
+.body .buyList .text :nth-child(2) {
+  margin-left: 465px;
+}
+.body .buyList .text :nth-child(3) {
+  margin-left: 130px;
+}
+.body .buyList .text :nth-child(4) {
+  margin-left: 130px;
+}
+.body .buyList .text :nth-child(5) {
+  margin-left: 150px;
+}
+.body .buyList .one {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  border-top: 2px dashed #1493af;
+  border-bottom: 2px dashed #1493af;
+}
+.body .buyList .one a {
+  left: 100px;
+}
+.body .buyList .one .title {
+  left: 240px;
+  width: 240px;
+}
+.body .buyList .one .title h4 {
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+.body .buyList .one .title :nth-child(3) {
+  color: #999;
+  font-size: 12px;
+}
+.body .buyList .one .price {
+  left: 580px;
+  width: 100px;
+  text-align: center;
+}
+.body .buyList .one .booknum {
+  left: 760px;
+}
+.body .buyList .one .booknum input {
+  width: 60px;
+  height: 40px;
+  text-align: center;
+}
+.body .buyList .one .booknum :nth-child(2) {
+  position: absolute;
+  top: -2px;
+  left: 75px;
+}
+.body .buyList .one .booknum :nth-child(3) {
+  position: absolute;
+  top: 23px;
+  left: 75px;
+}
+.body .buyList .one .booknum a:hover {
+  color: #1493af;
+}
+.body .buyList .one .priceAll {
+  left: 920px;
+}
+.body .buyList .one .priceAll p span {
+  color: #1493af;
+}
+.body .buyList .one .contron {
+  left: 1110px;
+}
+.body .buyList .one .contron a {
+  color: #1493af;
+}
+.body .buyList .one .contron a:hover {
+  border-bottom: 1px solid #1493af;
+}
+.body .buyList .one > * {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+footer {
+  width: 100%;
+  background-color: #fff;
+  height: 60px;
+  position: fixed;
+  bottom: 0;
+  line-height: 60px;
+}
+footer .container .allNum {
+  position: absolute;
+  right: 520px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 500;
+}
+footer .container .allNum span {
+  font-size: 20px;
+  color: #1493af;
+  font-weight: 700;
+}
+footer .container .addPrice {
+  position: absolute;
+  right: 300px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+footer .container .addPrice span {
+  font-size: 20px;
+  color: #1493af;
+  font-weight: 700;
+}
+footer .container .pay {
+  display: inline-block;
+  position: absolute;
+  right: 140px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 60px;
+  width: 120px;
+  background-color: #1493af;
+  color: #fff;
+  text-align: center;
+  line-height: 60px;
+  font-size: 34px;
+  font-weight: 600;
+}
+footer .container .pay:hover {
+  border: 1px solid #fff;
+}

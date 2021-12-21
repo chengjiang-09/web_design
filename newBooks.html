@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新书</title>
+    <link rel="stylesheet" href="./assets/libs/bootstrap-3.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/morebook.css">
+</head>
+<body>
+    <header>
+        <div class="funcModule">
+            <div class="bainian"><img src="./assets/images/bainian2.png"></div>
+            <div class="container">
+                <div class="funcLeft">
+                    <a href="./register_login.html">欢迎光临，<span class="userNamePhone">去登录</span></a>
+                    <a href="./login_register.html">免费注册</a>
+                </div>
+                <div class="funcRigth">
+                    <ul>
+                        <li></li>
+                        <li><a href="./index.html">书店首页</a></li>
+                        <li>|</li>
+                        <li><a href="./buyCar.html"><span
+                                    class="glyphicon glyphicon-shopping-cart"></span>购物车<span>0</span></a></li>
+                        <li>|</li>
+                        <li><a href="javascript:;">我的订单</a></li>
+                        <li>|</li>
+                        <li><a href="javascript:;">个人中心</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="searchBook">
+            <div class="container">
+                <div class="logo"><a href="./index.html"><img
+                            src="./assets/images/logo.png"></a></div>
+
+                <form class="form-inline" id="searchForm">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="inputsearch" placeholder="">
+                            <button class="glyphicon glyphicon-search"></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <ul class="nav nav-pills headernav">
+                <li role="presentation"><a href="./index.html">主页</a></li>
+                <li role="presentation"><a href="./commonbooks.html">书库</a></li>
+                <li role="presentation"><a href="./activeBooks.html">畅销书籍</a></li>
+                <li role="presentation" class="active"><a href="./newBooks.html">新书</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="body container">
+        <div class="navLeft">
+            <div class="title">
+                <h4>新书</h4>
+            </div>
+            <ul>
+
+            </ul>
+        </div>
+        <div class="booksRight">
+            <div class="allbook">
+                <div class="title">
+                    <h4>新进书籍</h4>
+                </div>
+                <ul class="bookBox">
+                    
+                </ul>                
+            </div>
+        </div>
+    </div>
+    <!-- 精选书模板 -->
+    <script type="text/html" id="bookAside">
+        <li><a href="./assets/views/onebook.html?bookid={{ bookid }}" id="{{ bookid }}"
+                title="{{ bookname }}"><span>[{{ bookclassify }}]</span><span>{{ bookname }}</span><span>{{ author }}</span></a>
+        </li>
+    </script>
+
+    <!-- 单本书籍模板 -->
+    <script type="text/html" id="oneBook">
+        <li>
+            <div class="bookpic">
+                <a href="./assets/views/onebook.html?bookid={{ bookid }}" id="{{ bookid }}"><img
+                        src=".{{ bookpic }}/{{ picname }}"></a>
+            </div>
+            <div class="text">
+                <h3><a href="./assets/views/onebook.html?bookid={{ bookid }}">{{ bookname }}</a></h3>
+                <p>{{ content }}</p>
+                <div>
+                    <span><a href="javascript:;"><i class="glyphicon glyphicon-user"></i>{{ author }}</a></span>
+                    <span><a href="javascript:;">[{{ bookclassify }}]</a></span><span
+                        class="glyphicon glyphicon-shopping-cart"><a href="javascript:;">加入购物车</a></span>
+                </div>
+            </div>
+            <div class="bookPrice">￥ <span>{{ bookprice }}</span></div>
+        </li>
+    </script>
+
+    <script src="./assets/libs/jquery.min.js"></script>
+    <script src="./assets/js/verification_session.js"></script>
+    <script src="./assets/utils/util_template.js"></script>
+    <script src="./assets/js/newbook.js"></script>
+</body>
+</html>

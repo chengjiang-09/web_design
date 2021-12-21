@@ -1,0 +1,149 @@
+.body {
+  margin-top: 10px;
+  display: flex;
+}
+.body .navLeft {
+  width: 200px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px 5px;
+}
+.body .navLeft .title {
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 2px dashed #1493af;
+  margin-bottom: 4px;
+}
+.body .navLeft .title h4 {
+  color: #1493af;
+}
+.body .navLeft ul li {
+  margin: 2px 0;
+}
+.body .navLeft ul li span:nth-child(1) {
+  color: #000;
+  font-size: 9px;
+}
+.body .navLeft ul li span:nth-child(2) {
+  display: inline-block;
+  color: #000;
+  width: 72px;
+  margin-left: 3px;
+  font-size: 9px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.body .navLeft ul li span:nth-child(3) {
+  float: right;
+  color: #b8b8b8;
+  font-size: 6px;
+}
+.body .booksRight {
+  flex: 1;
+}
+.body .booksRight .allbook {
+  padding: 10px 5px;
+  width: 100%;
+  margin: 0 10px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.body .booksRight .allbook .title {
+  width: 100%;
+  height: 40px;
+  line-height: 30px;
+  border-bottom: 2px dashed #1493af;
+  margin-bottom: 4px;
+}
+.body .booksRight .allbook .title h4 {
+  color: #1493af;
+}
+.body .booksRight .allbook .bookBox {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.body .booksRight .allbook .bookBox li {
+  width: 50%;
+}
+.body .booksRight .allbook .bookBox li {
+  position: relative;
+  display: flex;
+  padding: 20px 12px;
+}
+.body .booksRight .allbook .bookBox li .bookPrice {
+  position: absolute;
+  right: 20px;
+  top: 90px;
+  font-size: 18px;
+  color: #1493af;
+  padding: 0px 3px;
+  border: 2px solid #1493af;
+}
+.body .booksRight .allbook .bookBox li .bookPrice span {
+  font-size: 14px;
+}
+.body .booksRight .allbook .bookBox li .bookpic img {
+  width: 90px;
+  height: 120px;
+}
+.body .booksRight .allbook .bookBox li .text h3 {
+  position: absolute;
+  top: -5px;
+  left: 125px;
+}
+.body .booksRight .allbook .bookBox li .text h3 a {
+  color: #000;
+  font-size: 20px;
+}
+.body .booksRight .allbook .bookBox li .text h3 a:hover {
+  color: #1493af;
+}
+.body .booksRight .allbook .bookBox li .text p {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  left: 125px;
+}
+.body .booksRight .allbook .bookBox li .text div {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+.body .booksRight .allbook .bookBox li .text div span:nth-child(1) {
+  position: absolute;
+  bottom: 0px;
+  left: -145px;
+}
+.body .booksRight .allbook .bookBox li .text div span:nth-child(1) a {
+  color: #000;
+}
+.body .booksRight .allbook .bookBox li .text div span:nth-child(1) a:hover {
+  color: #1493af;
+}
+.body .booksRight .allbook .bookBox li .text div span:nth-child(2) {
+  margin-right: 40px;
+}
+.body .booksRight .allbook .bookBox li .text div span:nth-child(2) a {
+  color: #6d6d6d;
+}
+.body .booksRight .allbook .bookBox li .text div span:nth-child(2) a:hover {
+  color: #1493af;
+}
+.body .booksRight .allbook .bookBox li .text div span:nth-child(3) {
+  color: #1493af;
+}
+.body .booksRight .allbook .bookBox li .text div span:nth-child(3) a {
+  margin-left: 2px;
+  color: #6d6d6d;
+}
+.body .booksRight .allbook .bookBox li .text div span:nth-child(3) a:hover {
+  color: #1493af;
+}
+.body .booksRight .allbook .bookBox li .glyphicon-user {
+  border: 1px solid #999;
+  color: #999;
+  border-radius: 50%;
+  padding: 2px;
+}
