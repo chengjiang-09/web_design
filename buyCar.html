@@ -16,6 +16,7 @@
             <div class="container">
                 <div class="funcLeft">
                     <a href="./register_login.html">欢迎光临，<span class="userNamePhone">去登录</span></a>
+                    <span class="logout"></span>
                     <a href="./login_register.html">免费注册</a>
                 </div>
                 <div class="funcRigth">
@@ -23,9 +24,9 @@
                         <li></li>
                         <li><a href="./index.html">书店首页</a></li>
                         <li>|</li>
-                        <li><a href="javascript:;"><span class="glyphicon glyphicon-shopping-cart"></span>购物车<span>0</span></a></li>
+                        <li><a href="javascript:;"><span class="glyphicon glyphicon-shopping-cart"></span>购物车<span class="ordercarnum">0</span></a></li>
                         <li>|</li>
-                        <li><a href="javascript:;">我的订单</a></li>
+                        <li><a href="./myorder.html">我的订单</a></li>
                         <li>|</li>
                         <li><a href="javascript:;">个人中心</a></li>
                     </ul>
@@ -40,16 +41,17 @@
                     <div class="form-group">
                       <div class="input-group">
                         <input type="text" class="form-control" id="inputsearch" placeholder="">
-                        <button class="glyphicon glyphicon-search"></button>
+                        <button type="button" class="glyphicon glyphicon-search" id="inputsearchbtn"></button>
                       </div>
                     </div>
                   </form>
             </div>
             <ul class="nav nav-pills headernav">
-              <li role="presentation" class="active"><a href="./index.html">主页</a></li>
+              <li role="presentation"><a href="./index.html">主页</a></li>
               <li role="presentation"><a href="./commonbooks.html">书库</a></li>
               <li role="presentation"><a href="./activeBooks.html">畅销书籍</a></li>
               <li role="presentation"><a href="./newBooks.html">新书</a></li>
+              <li role="presentation"><a href="./searchBooks.html">查找书籍</a></li>
             </ul>
         </div>
     </header>
@@ -59,137 +61,51 @@
         <div class="buyList">
             <div class="text"><span>详细信息</span><span>单价</span><span>数量</span><span>金额</span><span>操作</span></div>
             <div class="list">
-                <div class="one">
-                    <input type="checkbox">
-                    <a href="#"><img src="./assets/uploads/901.jfif"></a>
-                    <div class="title">
-                        <a href="#"><h4>开局一个亚空间</h4></a>
-                        <p>诸位，希望并没有消失，我们的征途应当是星辰大海！</p>
-                        <p>第一出版社</p>
-                    </div>
-                    <div class="price">
-                        <p><span>￥ </span><span>300.00</span></p>
-                    </div>
-                    <div class="booknum">
-                        <input type="text" value="1">
-                        <a href="javascript:;"><i class="glyphicon glyphicon-chevron-up"></i></a>
-                        <a href="javascript:;"><i class="glyphicon glyphicon-chevron-down"></i></a>
-                    </div>
-                    <div class="priceAll">
-                        <p><span>￥ </span><span>300.00</span></p>
-                    </div>
-                    <div class="contron">
-                        <a href="javascript:;">删除</a>
-                    </div>
-                </div>
-                <div class="one">
-                    <input type="checkbox">
-                    <a href="#"><img src="./assets/uploads/901.jfif"></a>
-                    <div class="title">
-                        <a href="#"><h4>开局一个亚空间</h4></a>
-                        <p>诸位，希望并没有消失，我们的征途应当是星辰大海！</p>
-                        <p>第一出版社</p>
-                    </div>
-                    <div class="price">
-                        <p><span>￥ </span><span>300.00</span></p>
-                    </div>
-                    <div class="booknum">
-                        <input type="text" value="1">
-                        <a href="javascript:;"><i class="glyphicon glyphicon-chevron-up"></i></a>
-                        <a href="javascript:;"><i class="glyphicon glyphicon-chevron-down"></i></a>
-                    </div>
-                    <div class="priceAll">
-                        <p><span>￥ </span><span>300.00</span></p>
-                    </div>
-                    <div class="contron">
-                        <a href="javascript:;">删除</a>
-                    </div>
-                </div>
-                <div class="one">
-                    <input type="checkbox">
-                    <a href="#"><img src="./assets/uploads/901.jfif"></a>
-                    <div class="title">
-                        <a href="#"><h4>开局一个亚空间</h4></a>
-                        <p>诸位，希望并没有消失，我们的征途应当是星辰大海！</p>
-                        <p>第一出版社</p>
-                    </div>
-                    <div class="price">
-                        <p><span>￥ </span><span>300.00</span></p>
-                    </div>
-                    <div class="booknum">
-                        <input type="text" value="1">
-                        <a href="javascript:;"><i class="glyphicon glyphicon-chevron-up"></i></a>
-                        <a href="javascript:;"><i class="glyphicon glyphicon-chevron-down"></i></a>
-                    </div>
-                    <div class="priceAll">
-                        <p><span>￥ </span><span>300.00</span></p>
-                    </div>
-                    <div class="contron">
-                        <a href="javascript:;">删除</a>
-                    </div>
-                </div>
-                <div class="one">
-                    <input type="checkbox">
-                    <a href="#"><img src="./assets/uploads/901.jfif"></a>
-                    <div class="title">
-                        <a href="#"><h4>开局一个亚空间</h4></a>
-                        <p>诸位，希望并没有消失，我们的征途应当是星辰大海！</p>
-                        <p>第一出版社</p>
-                    </div>
-                    <div class="price">
-                        <p><span>￥ </span><span>300.00</span></p>
-                    </div>
-                    <div class="booknum">
-                        <input type="text" value="1">
-                        <a href="javascript:;"><i class="glyphicon glyphicon-chevron-up"></i></a>
-                        <a href="javascript:;"><i class="glyphicon glyphicon-chevron-down"></i></a>
-                    </div>
-                    <div class="priceAll">
-                        <p><span>￥ </span><span>300.00</span></p>
-                    </div>
-                    <div class="contron">
-                        <a href="javascript:;">删除</a>
-                    </div>
-                </div>
-                <div class="one">
-                    <input type="checkbox">
-                    <a href="#"><img src="./assets/uploads/901.jfif"></a>
-                    <div class="title">
-                        <a href="#"><h4>开局一个亚空间</h4></a>
-                        <p>诸位，希望并没有消失，我们的征途应当是星辰大海！</p>
-                        <p>第一出版社</p>
-                    </div>
-                    <div class="price">
-                        <p><span>￥ </span><span>300.00</span></p>
-                    </div>
-                    <div class="booknum">
-                        <input type="text" value="1">
-                        <a href="javascript:;"><i class="glyphicon glyphicon-chevron-up"></i></a>
-                        <a href="javascript:;"><i class="glyphicon glyphicon-chevron-down"></i></a>
-                    </div>
-                    <div class="priceAll">
-                        <p><span>￥ </span><span>300.00</span></p>
-                    </div>
-                    <div class="contron">
-                        <a href="javascript:;">删除</a>
-                    </div>
-                </div>
+                <!-- 图书列表 -->
+                
             </div>
         </div>
     </div>
 
     <footer>
         <div class="container">
-            <input type="checkbox">全选
-            <div class="allNum">已选书籍 <span> 0 </span> 本</div>
-            <div class="addPrice">合计：￥<span>0.00</span></div>
+            <input type="checkbox" class="all">全选
+            <div class="allNum">已选书籍 <span class="checkedbooknum"> 0 </span> 本</div>
+            <div class="addPrice">合计：￥<span class="checkedbookprice">0</span></div>
             <a href="javascript:;" class="pay">结算</a>
         </div>
     </footer>
+
+    <script type="text/html" id="oneBuyCar">
+        <div class="one" id="{{ bookid }}">
+            <input type="checkbox" class="checkboxone">
+            <a href="./assets/views/onebook.html?bookid={{ bookid }}"><img src=".{{ bookpic }}/{{ picname }}"></a>
+            <div class="title">
+                <a href="./assets/views/onebook.html?bookid={{ bookid }}"><h4>{{ bookname }}</h4></a>
+                <p>{{ content }}</p>
+                <p>{{ press }}</p>
+            </div>
+            <div class="price">
+                <p><span>￥ </span><span class="oneprice">{{ bookprice }}</span></p>
+            </div>
+            <div class="booknum">
+                <input type="text" value="1" class="num">
+                <a href="javascript:;"><i class="glyphicon glyphicon-chevron-up"></i></a>
+                <a href="javascript:;"><i class="glyphicon glyphicon-chevron-down"></i></a>
+            </div>
+            <div class="priceAll">
+                <p><span>￥ </span><span class="allprice">{{ bookprice }}</span></p>
+            </div>
+            <div class="contron">
+                <a href="http://46ee815878.qicp.vip/web_bookstore/delete_ordercar?bookid={{ bookid }}" class="delonebuycar">删除</a>
+            </div>
+        </div>
+    </script>
     
 
     <script src="./assets/libs/jquery.min.js"></script>
     <script src="./assets/utils/util_template.js"></script>
     <script src="./assets/js/buyCar.js"></script>
+    <script src="./assets/js/tosearch.js"></script>
 </body>
 </html>

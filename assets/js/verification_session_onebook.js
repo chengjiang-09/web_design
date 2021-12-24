@@ -22,7 +22,7 @@ class verify_session {
                         localStorage.setItem("userName", res.datas.username)
 
                         this.username.html(res.datas.username)
-                        this.username.parent().prop("href","./assets/views/userCenter.html").siblings(".logout").html("<a>注销</a>")
+                        this.username.parent().prop("href","./userCenter.html").siblings(".logout").html("<a href='./commonbooks.html'>注销</a>")
                         
                         $(".logout").find("a").prop("href",`http://46ee815878.qicp.vip/web_bookstore/user_logout?phone=${res.datas.phone}`)
 
@@ -58,7 +58,8 @@ class verify_session {
                                 }
                             }
                         })
-                        
+
+
                     }else if(res.status == 1){
                         localStorage.removeItem("phone_Cookie")
                         localStorage.removeItem("userName")
@@ -68,6 +69,7 @@ class verify_session {
         }
     }
 }
+
 $(function(){
     new verify_session()
 })

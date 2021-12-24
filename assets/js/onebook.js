@@ -12,13 +12,14 @@ class init_thebook{
             success:(res) => {
                 if(res.status == 0){
                     this.bookList = res.datas
+                    this.init_book()
+
+                    new onebooktobuycar(res.datas[0].bookid)
                 }else if(res.status == 1){
-                    console.log(res.msg);
+                    $(".bookbody").html(`<h1>${res.msg} 未找到当前页面！</h1>`)
                 }
             }
         })
-
-        this.init_book()
     }
     init_book(){
         let bookListStr = util_template(this.bookList,"booktl")
@@ -26,6 +27,7 @@ class init_thebook{
         $(".bookbody").html(bookListStr)
     }
 }
+
 $(function(){
     new init_thebook()
 })

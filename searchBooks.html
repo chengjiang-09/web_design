@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>书库</title>
+    <title>查找书籍</title>
     <link rel="stylesheet" href="./assets/libs/bootstrap-3.4.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/morebook.css">
+    <link rel="stylesheet" href="./assets/css/searchBooks.css">
 </head>
 
 <body>
@@ -51,40 +51,24 @@
             </div>
             <ul class="nav nav-pills headernav">
                 <li role="presentation"><a href="./index.html">主页</a></li>
-                <li role="presentation" class="active"><a href="./commonbooks.html">书库</a></li>
+                <li role="presentation"><a href="./commonbooks.html">书库</a></li>
                 <li role="presentation"><a href="./activeBooks.html">畅销书籍</a></li>
                 <li role="presentation"><a href="./newBooks.html">新书</a></li>
-                <li role="presentation"><a href="./searchBooks.html">查找书籍</a></li>
+                <li role="presentation" class="active"><a href="javascript:;">查找书籍</a></li>
             </ul>
         </div>
     </header>
 
     <div class="body container">
-        <div class="navLeft">
+        <div class="allbook">
             <div class="title">
-                <h4>书库</h4>
+                <h4>查询图书</h4>
             </div>
-            <ul>
-
-            </ul>
-        </div>
-        <div class="booksRight">
-            <div class="allbook">
-                <div class="title">
-                    <h4>所有书籍</h4>
-                </div>
-                <ul class="bookBox">
-
-                </ul>
-            </div>
+            <ul class="bookBox">
+                
+            </ul>                
         </div>
     </div>
-    <!-- 精选书模板 -->
-    <script type="text/html" id="bookAside">
-        <li><a href="./assets/views/onebook.html?bookid={{ bookid }}" id="{{ bookid }}"
-                title="{{ bookname }}"><span>[{{ bookclassify }}]</span><span>{{ bookname }}</span><span>{{ author }}</span></a>
-        </li>
-    </script>
 
     <!-- 单本书籍模板 -->
     <script type="text/html" id="oneBook">
@@ -99,9 +83,7 @@
                 <div>
                     <span><a href="javascript:;"><i class="glyphicon glyphicon-user"></i>{{ author }}</a></span>
                     <span><a href="javascript:;">[{{ bookclassify }}]</a></span><span
-                        class="glyphicon glyphicon-shopping-cart"><a
-                            href="http://46ee815878.qicp.vip/web_bookstore/add_ordercar?bookid={{ bookid }}"
-                            class="toBuyCar">加入购物车</a></span>
+                        class="glyphicon glyphicon-shopping-cart"><a href="http://46ee815878.qicp.vip/web_bookstore/add_ordercar?bookid={{ bookid }}" class="toBuyCar">加入购物车</a></span>
                 </div>
             </div>
             <div class="bookPrice">￥ <span>{{ bookprice }}</span></div>
@@ -112,8 +94,7 @@
     <script src="./assets/js/verification_session.js"></script>
     <script src="./assets/utils/util_template.js"></script>
     <script src="./assets/js/tobuycar.js"></script>
-    <script src="./assets/js/commonbook.js"></script>
-    <script src="./assets/js/tosearch.js"></script>
+    <script src="./assets/js/searchBooks.js"></script>
 </body>
 
 </html>

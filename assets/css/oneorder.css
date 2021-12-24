@@ -1,0 +1,77 @@
+.body {
+  margin-top: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px 25px;
+  margin-bottom: 70px;
+}
+.body .buyAll {
+  height: 40px;
+  width: 100%;
+  line-height: 40px;
+  border-bottom: 2px solid #1493af;
+  color: #1493af;
+}
+.body .buyAll input {
+  margin-right: 5px;
+}
+.body .buyList {
+  position: relative;
+}
+.body .buyList .text {
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+}
+.body .buyList .text :nth-child(1) {
+  margin-left: 100px;
+}
+.body .buyList .text :nth-child(2) {
+  margin-left: 315px;
+}
+.body .buyList .text :nth-child(3) {
+  margin-left: 130px;
+}
+.body .buyList .text :nth-child(4) {
+  margin-left: 130px;
+}
+.body .buyList .text :nth-child(5) {
+  margin-left: 150px;
+}
+.body .buyList .list .one {
+  height: 150px;
+}
+.body .buyList .list .one .bodyLeft {
+  float: left;
+  margin-left: 20px;
+}
+.body .buyList .list .one .bodyLeft .orderContent h2 {
+  font-size: 14px;
+}
+.body .buyList .list .one .bodyLeft .orderContent h4 {
+  font-size: 10px;
+}
+.body .buyList .list .one .bodyRigth {
+  float: right;
+}
+.body .buyList .list .one .bodyRigth > div {
+  float: left;
+}
+.body .buyList .list .one .bodyRigth .toplaceAndtouser {
+  margin-left: 90px;
+}
+.body .buyList .list .one .bodyRigth .toplaceAndtouser input {
+  display: block;
+}
+.body .buyList .list .one .bodyRigth .gouserAndPhone {
+  margin-left: 130px;
+}
+.body .buyList .list .one .bodyRigth .allnum {
+  margin-left: 145px;
+}
+.body .buyList .pay {
+  position: absolute;
+  width: 200px;
+  right: 0;
+  bottom: 0;
+}

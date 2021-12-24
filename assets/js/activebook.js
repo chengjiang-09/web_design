@@ -21,6 +21,7 @@ class init_activebook{
 
         this.init_bookAside()
         this.init_book()
+        new tobuycar()
     }
     init_bookAside(){
         let bookAsideStr = util_template(this.bookList,"bookAside")

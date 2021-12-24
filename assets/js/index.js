@@ -20,6 +20,7 @@ class init_index{
         
         this.init_bookAside()
         this.init_bookBox()
+        new tobuycar()
     }
     init_bookAside(){
         let bookAsideStr = util_template(this.bookList,"bookAside")
@@ -33,6 +34,7 @@ class init_index{
         $(".activeBook").find(".bookBox").html(bookList[1])
     }
 }
+
 $(function(){
     new init_index()
 })

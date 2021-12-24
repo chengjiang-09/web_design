@@ -17,6 +17,7 @@
             <div class="container">
                 <div class="funcLeft">
                     <a href="./register_login.html">欢迎光临，<span class="userNamePhone">去登录</span></a>
+                    <span class="logout"></span>
                     <a href="./login_register.html">免费注册</a>
                 </div>
                 <div class="funcRigth">
@@ -24,9 +25,9 @@
                         <li></li>
                         <li><a href="./index.html">书店首页</a></li>
                         <li>|</li>
-                        <li><a href="./buyCar.html"><span class="glyphicon glyphicon-shopping-cart"></span>购物车<span>0</span></a></li>
+                        <li><a href="./buyCar.html"><span class="glyphicon glyphicon-shopping-cart"></span>购物车<span class="ordercarnum">0</span></a></li>
                         <li>|</li>
-                        <li><a href="javascript:;">我的订单</a></li>
+                        <li><a href="./myorder.html">我的订单</a></li>
                         <li>|</li>
                         <li><a href="javascript:;">个人中心</a></li>
                     </ul>
@@ -36,12 +37,11 @@
         <div class="searchBook">
             <div class="container">
                 <div class="logo"><a href="./index.html"><img src="./assets/images/logo.png"></a></div>
-
-                <form class="form-inline" id="searchForm">
+                <form class="form-inline" id="searchForm" >
                     <div class="form-group">
                       <div class="input-group">
-                        <input type="text" class="form-control" id="inputsearch" placeholder="">
-                        <button class="glyphicon glyphicon-search"></button>
+                        <input type="text" class="form-control inputsearch" id="inputsearch" placeholder="" value="">
+                        <button type="button" class="glyphicon glyphicon-search"></button>
                       </div>
                     </div>
                   </form>
@@ -51,6 +51,7 @@
               <li role="presentation"><a href="./commonbooks.html">书库</a></li>
               <li role="presentation"><a href="./activeBooks.html">畅销书籍</a></li>
               <li role="presentation"><a href="./newBooks.html">新书</a></li>
+              <li role="presentation"><a href="./searchBooks.html">查找书籍</a></li>
             </ul>
         </div>
     </header>
@@ -183,7 +184,7 @@
           <p>{{ content }}</p>
           <div>
             <span><a href="javascript:;"><i class="glyphicon glyphicon-user"></i>{{ author }}</a></span>
-            <span><a href="javascript:;">[{{ bookclassify }}]</a></span><span class="glyphicon glyphicon-shopping-cart"><a href="javascript:;">加入购物车</a></span>
+            <span><a href="javascript:;">[{{ bookclassify }}]</a></span><span class="glyphicon glyphicon-shopping-cart"><a href="http://46ee815878.qicp.vip/web_bookstore/add_ordercar?bookid={{ bookid }}" class="toBuyCar">加入购物车</a></span>
           </div>
         </div>
         <div class="bookPrice">￥ <span>{{ bookprice }}</span></div>
@@ -192,10 +193,12 @@
 
     
     <script src="./assets/libs/jquery.min.js"></script>
-    <script src="./assets/js/index.js"></script>
     <script src="./assets/js/bannelLB.js"></script>
     <script src="./assets/utils/kartu.js"></script>
     <script src="./assets/utils/util_template.js"></script>
     <script src="./assets/js/verification_session.js"></script>
+    <script src="./assets/js/tobuycar.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/tosearch.js"></script>
 </body>
 </html>

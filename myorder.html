@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>书库</title>
+    <title>我的订单</title>
     <link rel="stylesheet" href="./assets/libs/bootstrap-3.4.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/morebook.css">
+    <link rel="stylesheet" href="./assets/css/myorder.css">
 </head>
 
 <body>
@@ -29,7 +29,7 @@
                         <li><a href="./buyCar.html"><span class="glyphicon glyphicon-shopping-cart"></span>购物车<span
                                     class="ordercarnum">0</span></a></li>
                         <li>|</li>
-                        <li><a href="./myorder.html">我的订单</a></li>
+                        <li><a href="javascript:;">我的订单</a></li>
                         <li>|</li>
                         <li><a href="javascript:;">个人中心</a></li>
                     </ul>
@@ -51,7 +51,7 @@
             </div>
             <ul class="nav nav-pills headernav">
                 <li role="presentation"><a href="./index.html">主页</a></li>
-                <li role="presentation" class="active"><a href="./commonbooks.html">书库</a></li>
+                <li role="presentation"><a href="./commonbooks.html">书库</a></li>
                 <li role="presentation"><a href="./activeBooks.html">畅销书籍</a></li>
                 <li role="presentation"><a href="./newBooks.html">新书</a></li>
                 <li role="presentation"><a href="./searchBooks.html">查找书籍</a></li>
@@ -60,59 +60,45 @@
     </header>
 
     <div class="body container">
-        <div class="navLeft">
-            <div class="title">
-                <h4>书库</h4>
-            </div>
-            <ul>
-
-            </ul>
-        </div>
-        <div class="booksRight">
-            <div class="allbook">
-                <div class="title">
-                    <h4>所有书籍</h4>
-                </div>
-                <ul class="bookBox">
-
-                </ul>
+        <div class="buyAll">我的订单</div>
+        <div class="buyList">
+            <div class="text"><span>详细信息</span><span>总价</span><span>总数</span><span>下单人/手机号</span><span>收货地址/收货人</span></div>
+            <div class="list">
+                <!-- 图书列表 --> 
+  
             </div>
         </div>
     </div>
-    <!-- 精选书模板 -->
-    <script type="text/html" id="bookAside">
-        <li><a href="./assets/views/onebook.html?bookid={{ bookid }}" id="{{ bookid }}"
-                title="{{ bookname }}"><span>[{{ bookclassify }}]</span><span>{{ bookname }}</span><span>{{ author }}</span></a>
-        </li>
-    </script>
 
-    <!-- 单本书籍模板 -->
-    <script type="text/html" id="oneBook">
-        <li>
-            <div class="bookpic">
-                <a href="./assets/views/onebook.html?bookid={{ bookid }}" id="{{ bookid }}"><img
-                        src=".{{ bookpic }}/{{ picname }}"></a>
-            </div>
-            <div class="text">
-                <h3><a href="./assets/views/onebook.html?bookid={{ bookid }}">{{ bookname }}</a></h3>
-                <p>{{ content }}</p>
-                <div>
-                    <span><a href="javascript:;"><i class="glyphicon glyphicon-user"></i>{{ author }}</a></span>
-                    <span><a href="javascript:;">[{{ bookclassify }}]</a></span><span
-                        class="glyphicon glyphicon-shopping-cart"><a
-                            href="http://46ee815878.qicp.vip/web_bookstore/add_ordercar?bookid={{ bookid }}"
-                            class="toBuyCar">加入购物车</a></span>
+    <script type="text/html" id="ordertl">
+        <div class="one">
+            <div class="bodyLeft">
+                <div class="orderContent">
+                    <h2>订单编号:<span class="orderid">{{ orderid }}</span></h2>
+                    <h4>下单时间:<span class="inordertime">{{ ordertime }}</span></h4>
+                    <h4>下单用户:<span class="inorderuser">{{ orderuser }}</span></h4>
                 </div>
             </div>
-            <div class="bookPrice">￥ <span>{{ bookprice }}</span></div>
-        </li>
+            <div class="bodyRigth">
+                <div>￥ <span class="allprise">{{ totalprice }}</span></div>
+                <div class="allnum">{{ totalnum }}</div>
+                <div class="gouserAndPhone">
+                    <div>下单用户:<span class="inorderuser">{{ orderuser }}</span></div>
+                    <div>手机号:<span class="userphone">{{ orderphone }}</span></div>
+                </div>
+                <div class="toplaceAndtouser">
+                    <div class="toplacetitle">收货地址:</div><span class="toplace">{{ toplace }}</span>
+                    <br>
+                    <div class="tousertitle">收件人:</div><span class="touser">{{ touser }}</span>
+                </div>
+            </div>
+        </div>
     </script>
 
     <script src="./assets/libs/jquery.min.js"></script>
     <script src="./assets/js/verification_session.js"></script>
     <script src="./assets/utils/util_template.js"></script>
-    <script src="./assets/js/tobuycar.js"></script>
-    <script src="./assets/js/commonbook.js"></script>
+    <script src="./assets/js/myorder.js"></script>
     <script src="./assets/js/tosearch.js"></script>
 </body>
 
