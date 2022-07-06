@@ -18,7 +18,7 @@ class register{
             let flag = true
 
             inputs.each((index,dom) => {
-                $(dom).val() === "" ? flag = false : flag = true
+                $(dom).val() === "" ? flag = false : flag
             })
 
             if(flag){

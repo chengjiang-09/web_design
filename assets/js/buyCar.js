@@ -82,14 +82,27 @@ class control_checkbox {
             let url = this.getAttribute("href")
             let phone = localStorage.getItem("phone_Cookie")
 
-            $.ajax({
-                type: "GET",
-                url: url + `&phone=${phone}`,
-                data: {},
-                success: (res) => {
-                    location.reload()
-                }
-            })
+
+            if(confirm("是否移除当前商品？")){
+                $.ajax({
+                    type: "GET",
+                    url: url + `&phone=${phone}`,
+                    data: {},
+                    success: (res) => {
+                        location.reload()
+                    }
+                })
+            }
+
+
+            // $.ajax({
+            //     type: "GET",
+            //     url: url + `&phone=${phone}`,
+            //     data: {},
+            //     success: (res) => {
+            //         location.reload()
+            //     }
+            // })
         })
     }
     allbuyNumPrice() {
